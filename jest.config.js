@@ -15,7 +15,7 @@ const baseConfig = {
 
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.js',
-    '<rootDir>/src/**/*.test.js',
+    '<rootDir>/src/**/*.(spec|test).js',
   ],
 
   // testMatch: ['<rootDir>/src/basic/Timer Mocks/**/*.test.js'],
@@ -38,6 +38,7 @@ if (process.env.JEST_ENV === 'coverage') {
       '!src/components/**/*.test.js',
       '!src/components/**/*.story.js',
       '!src/components/app.js',
+      '!src/index.js',
     ],
     coverageDirectory: 'coverage',
     coverageReporters: ['text', 'lcov'],
