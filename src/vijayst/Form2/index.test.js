@@ -25,4 +25,38 @@ describe('Form2', () => {
       expect(wrapper).toMatchSnapshot()
     })
   })
+
+  describe('handles', () => {
+    let wrapper, onAdd
+
+    beforeEach(() => {
+      onAdd = jest.fn()
+      wrapper = mount(<Form2 onAdd={onAdd} />)
+    })
+
+    afterEach(() => {
+      wrapper.unmount()
+    })
+
+    test('Form requires onAdd prop', () => {
+      expect(wrapper.props().onAdd).toBeDefined()
+    })
+
+    test('Form renders button', () => {
+      const button = wrapper.find('button').first()
+      expect(button).toBeDefined()
+    })
+
+    test('Button click calls onAdd', () => {
+      const button = wrapper.find('button').first()
+      const input = wrapper.find('input').first()
+
+      input.simulate('change', {
+        target: { value: 'example@email' },
+      })
+      button.simulate('click')
+
+      expect(onAdd).toHaveBeenCalledWith('example@email')
+    })
+  })
 })

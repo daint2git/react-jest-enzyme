@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter should update state should update count in state when increment button clicked 1`] = `
+<Fragment>
+  <button
+    name="increment"
+    onClick={[Function]}
+  >
+    increment
+  </button>
+  <button
+    name="decrement"
+    onClick={[Function]}
+  >
+    decrement
+  </button>
+  <p>
+    0
+  </p>
+</Fragment>
+`;
+
+exports[`Counter should update state should update count in state when increment button clicked 2`] = `
+<Fragment>
+  <button
+    name="increment"
+    onClick={[Function]}
+  >
+    increment
+  </button>
+  <button
+    name="decrement"
+    onClick={[Function]}
+  >
+    decrement
+  </button>
+  <p>
+    1
+  </p>
+</Fragment>
+`;
+
+exports[`Counter should update state should update count text when increment button clicked 1`] = `
+<Fragment>
+  <button
+    name="increment"
+    onClick={[Function]}
+  >
+    increment
+  </button>
+  <button
+    name="decrement"
+    onClick={[Function]}
+  >
+    decrement
+  </button>
+  <p>
+    0
+  </p>
+</Fragment>
+`;
+
+exports[`Counter should update state should update count text when increment button clicked 2`] = `
+<Fragment>
+  <button
+    name="increment"
+    onClick={[Function]}
+  >
+    increment
+  </button>
+  <button
+    name="decrement"
+    onClick={[Function]}
+  >
+    decrement
+  </button>
+  <p>
+    1
+  </p>
+</Fragment>
+`;

@@ -15,8 +15,9 @@ const baseConfig = {
 
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.js',
-    '<rootDir>/src/**/*.test.js',
+    '<rootDir>/src/**/*.(spec|test).js',
   ],
+
   // testMatch: ['<rootDir>/src/basic/Timer Mocks/**/*.test.js'],
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
 
@@ -36,7 +37,16 @@ if (process.env.JEST_ENV === 'coverage') {
       '!src/components/**/__stories__/**/*.js',
       '!src/components/**/*.test.js',
       '!src/components/**/*.story.js',
-      '!src/components/app.js',
+      '!src/components/Root/index.js',
+      '!src/app.js',
+      '!src/components/counter/index.js',
+      '!src/components/counter-list/index.js',
+      '!src/components/counterWithHook/index.js',
+      '!src/components/counterWithHookAndLocalStorage/index.js',
+      '!src/components/pages/header/index.js',
+      '!src/components/pages/layout/index.js',
+      '!src/components/pages/main/index.js',
+      '!src/components/pages/navbar/index.js',
     ],
     coverageDirectory: 'coverage',
     coverageReporters: ['text', 'lcov'],

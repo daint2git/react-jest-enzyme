@@ -9,6 +9,7 @@ exports[`Form2 Snapshot 1. renderer 1`] = `
     name="email"
     onChange={[Function]}
     type="text"
+    value=""
   />
   <button
     className="sc-htpNat keqZrr"
@@ -25,6 +26,7 @@ exports[`Form2 Snapshot 2. shallow 1`] = `
     name="email"
     onChange={[Function]}
     type="text"
+    value=""
   />
   <styled.button
     onClick={[Function]}
@@ -43,12 +45,14 @@ exports[`Form2 Snapshot 3. mount 1`] = `
       name="email"
       onChange={[Function]}
       type="text"
+      value=""
     >
       <input
         className="sc-bwzfXH gmViiu"
         name="email"
         onChange={[Function]}
         type="text"
+        value=""
       />
     </styled.input>
     <styled.button
@@ -73,6 +77,7 @@ exports[`Form2 Snapshot 4. render 1`] = `
     class="sc-bwzfXH gmViiu"
     name="email"
     type="text"
+    value=""
   />
   <button
     class="sc-htpNat keqZrr"

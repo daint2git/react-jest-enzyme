@@ -6,6 +6,7 @@ exports[`Form Snapshot 1. renderer 1`] = `
     name="email"
     onChange={[Function]}
     type="text"
+    value=""
   />
   <button
     onClick={[Function]}
@@ -21,6 +22,7 @@ exports[`Form Snapshot 2. shallow 1`] = `
     name="email"
     onChange={[Function]}
     type="text"
+    value=""
   />
   <button
     onClick={[Function]}
@@ -36,6 +38,7 @@ exports[`Form Snapshot 3. mount 1`] = `
     name="email"
     onChange={[Function]}
     type="text"
+    value=""
   />
   <button
     onClick={[Function]}
@@ -50,6 +53,7 @@ exports[`Form Snapshot 4. render 1`] = `
   <input
     name="email"
     type="text"
+    value=""
   />
   <button>
     Add
