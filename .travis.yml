@@ -16,4 +16,5 @@ install:
   - yarn
 script:
   - yarn test:coverage
-  - yarn coveralls
+
+after_success: 'yarn coveralls'
