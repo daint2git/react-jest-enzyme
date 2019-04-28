@@ -17,6 +17,7 @@ const baseConfig = {
     '<rootDir>/src/**/__tests__/**/*.js',
     '<rootDir>/src/**/*.test.js',
   ],
+
   // testMatch: ['<rootDir>/src/basic/Timer Mocks/**/*.test.js'],
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
 
