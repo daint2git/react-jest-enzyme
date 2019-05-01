@@ -3,11 +3,7 @@ sudo: false
 language: node_js
 
 node_js:
-  - '8'
-
-branches:
-  only:
-    - master
+  - 'node'
 
 cache:
   yarn: true
@@ -24,4 +20,5 @@ install:
 script:
   - yarn test:coverage --maxWorkers=4
 
-after_success: 'yarn coveralls'
+after_success:
+  - yarn coveralls
