@@ -15,12 +15,7 @@ export default class Form extends React.Component {
   render() {
     return (
       <form>
-        <input
-          type="text"
-          name="email"
-          value={this.state.value}
-          onChange={this.handleMailChange}
-        />
+        <input type="text" name="email" value={this.state.email} onChange={this.handleMailChange} />
         <button onClick={this.handleAdd}>Add</button>
       </form>
     )

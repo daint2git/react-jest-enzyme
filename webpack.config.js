@@ -1,12 +1,15 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const rootDir = path.resolve(process.cwd())
+const assetsPath = path.resolve(rootDir, 'assets')
 const srcPath = path.resolve(rootDir, 'src')
 
 module.exports = {
   mode: 'development',
-  entry: `${srcPath}/index.js`,
+  entry: `${srcPath}/app.js`,
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
+    chunkFilename: '[name].chunk.js',
   },
   module: {
     rules: [
@@ -33,6 +36,16 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: `${assetsPath}/template.html`,
+    }),
+  ],
   devServer: {
     port: 6969,
     open: true,

@@ -10,6 +10,7 @@ exports[`FormAndList Snapshot 1. renderer 1`] = `
       name="email"
       onChange={[Function]}
       type="text"
+      value=""
     />
     <button
       className="sc-htpNat keqZrr"
@@ -65,12 +66,14 @@ exports[`FormAndList Snapshot 4. mount 1`] = `
         name="email"
         onChange={[Function]}
         type="text"
+        value=""
       >
         <input
           className="sc-bwzfXH gmViiu"
           name="email"
           onChange={[Function]}
           type="text"
+          value=""
         />
       </styled.input>
       <styled.button
@@ -141,6 +144,7 @@ exports[`FormAndList Snapshot 6. render 1`] = `
       class="sc-bwzfXH gmViiu"
       name="email"
       type="text"
+      value=""
     />
     <button
       class="sc-htpNat keqZrr"

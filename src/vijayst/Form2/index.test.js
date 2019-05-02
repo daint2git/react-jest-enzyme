@@ -56,7 +56,7 @@ describe('Form2', () => {
       })
       button.simulate('click')
 
-      expect(onAdd).toBeCalledWith('example@email')
+      expect(onAdd).toHaveBeenCalledWith('example@email')
     })
   })
 })

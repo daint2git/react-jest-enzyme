@@ -33,7 +33,7 @@ export default class Form2 extends React.Component {
         <StyledInputText
           type="text"
           name="email"
-          value={this.state.value}
+          value={this.state.email}
           onChange={this.handleMailChange}
         />
         <StyledButton onClick={this.handleAdd}>Add</StyledButton>
